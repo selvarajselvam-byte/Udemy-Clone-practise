@@ -14,6 +14,10 @@ body {
     border-bottom: solid black 0.5px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .Navbar-s1__title {
@@ -34,58 +38,104 @@ body {
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: transparent;
 }
-.Navbar-s2 input:focus{
+
+.Navbar-s2 input:focus {
     outline: none;
 }
-.Navbar-s3{
+
+.Navbar-s3 {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.Categories{
+
+/* My Learning Popup */
+.mylearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+.Categories {
     display: flex;
     padding: 10px;
     border-bottom: none;
     justify-content: space-around;
 
 }
-.Categories button{
+
+.Categories button {
     background-color: #892DE1;
     color: white;
     padding: 10px;
     border-radius: 40px;
     cursor: pointer;
 }
-.Sale-image img{
+
+.Sale-image {
+    position: relative;
+}
+
+.Sale-image img {
     width: 100%;
 }
-.Recommended{
+
+.Sale-image__offer {
+    width: 35%;
+    border: solid black 2px;
+    background-color: white;
+    padding: 2%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.Recommended {
     padding: 10px;
 }
-.Recommended__Container{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 10px;
+
+.Recommended__Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
 }
-.course-card{
+
+.course-card {
     width: 250px;
 }
-.course-card img{
+
+.course-card img {
     height: 40%;
     width: 63%;
 }
-.Topics{
+
+.Topics {
     padding: 10px;
 }
-.Topics__Container{
+
+.Topics__Container {
     display: flex;
     gap: 10px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
-.Topics__Container button{
+
+.Topics__Container button {
     background-color: white;
     color: black;
     border: solid gray 2px;
@@ -94,27 +144,30 @@ margin-top: 10px;
     flex-basis: 25%;
     cursor: pointer;
 }
-.Popular{
+
+.Popular {
     padding: 10px;
 }
-.Popular__Container{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 10px;
+
+.Popular__Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
 }
-.Footer{
+
+.Footer {
     padding: 50px;
     background-color: black;
     color: white;
 }
-.Footer__one{
+
+.Footer__one {
     display: flex;
     gap: 30px;
 }
-.Footer__two{
+
+.Footer__two {
     display: flex;
     justify-content: space-between;
 }
-
-
