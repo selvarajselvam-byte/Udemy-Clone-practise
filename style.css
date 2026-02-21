@@ -177,6 +177,9 @@ body {
     background: linear-gradient(135deg, #f8f5fc 0%, #f0e6fc 100%);
     top: 5%;
 }
+.Pricing__title h1{
+    margin: 0;
+}
 .pricing h2 {
     padding: 10px;
     font-size: 36px;
